@@ -29,3 +29,8 @@ if (x == y)
 {
     console.log("They are equal");
 }
+
+var year = 2003;
+var remainder = year % 4;
+
+console.log(remainder);
