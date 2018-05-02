@@ -65,3 +65,16 @@ ff = sums(25, 36);
 m = multip(25, 36);
 console.log(ff);
 console.log(m);
+
+function modulo(ma, dc) {
+    return ma % dc;
+}
+console.log(modulo(25, 4));
+
+function divisio(q, d) {
+    return q / d;
+}
+
+answer = divisio(1000,50);
+
+console.log(answer);
