@@ -20,7 +20,7 @@ if (x > 10)
 
 console.log(y);
 console.log(z);
-*/
+
 
 x = 5;
 y = '5';
@@ -34,3 +34,34 @@ var year = 2003;
 var remainder = year % 4;
 
 console.log(remainder);
+
+
+ var age = 0;
+
+ while (age < 11) {
+                    console.log(age);
+                    age++;
+                    }
+
+*/
+
+// functions
+function startSession() {
+    console.log("Session has started!");
+}
+
+startSession();
+
+function sums(x, y) {
+    return x + y;
+}
+
+
+function multip(x, y) {
+    return x * y;
+}
+
+ff = sums(25, 36);
+m = multip(25, 36);
+console.log(ff);
+console.log(m);
