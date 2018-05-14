@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Style css</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+    <h1 id=fre onclick="seeThis()">Click and see magic!</h1>
+    <h1 id=hod onclick="replay()">bb</h1>
+    <p id="dd"> Hey naw!</p>
+    <p id="bo"> </p>
+<script>
+    document.getElementById('dd').style.color = "red";
+    function changeText(id) {
+        id.innerHTML = "Ooops!!!!!!!";
+    }
+    
+    function replay() {
+        var ch = document.getElementById('hod').innerHTML= "bb";
+        if (ch == "bb")
+        {
+            document.getElementById('bo').innerHTML = "Ye it works!";
+        }
+        else
+        {
+            document.getElementById('bo').innerHTML = "click bb again";
+        }
+    }
+
+    function seeThis() {
+       document.getElementById('fre').innerHTML= "It's Friday!!!!!!!!!";
+    }
+
+</script>
+
+</body>
+</html>

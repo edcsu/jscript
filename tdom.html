@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM TYPE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <h1 id="cool">Hello World!</h1>
+
+    <h2>Working with Javascript and DOM</h2>
+
+    <p id="demo" > Without Javascript </p>
+
+    <p id="tp"> </p>
+
+    <p id="kol"></p>
+
+    <p id="mas"> </p>
+
+    <p id="cv"></p>
+
+    <p id="dif"></p>
+
+    <p id="jit"></p>
+
+    <p id="md"> </p>
+
+    <script>
+        var myelement = document.getElementById('cool');
+        var x = document.getElementsByTagName('p');
+        
+    //    document.getElementById('cool').innerHTML = "GITHUB"; 
+        document.getElementById('demo').innerHTML = "Yes finally something!!!!!!!!!";
+        document.getElementById('tp').innerHTML =   "Found this in my h1 tag: " + myelement.innerHTML;
+        document.getElementById('kol').innerHTML = "The first paragraph (index 0) is "
+        + x[0].innerHTML;
+        // ctrl + shift + p => word wrap
+
+        var Samsung = [];
+          var mystr = "";
+          var pan = "";
+
+        for(i = 0; i < x.length; i++)
+        {
+            Samsung.push(x[i].innerHTML);
+            mystr += x[i].innerHTML;
+            pan = pan.concat(x[i].innerHTML);
+        }
+
+        document.getElementById('mas').innerHTML = Samsung;
+        document.getElementById('cv').innerHTML = mystr;
+        document.getElementById('dif').innerHTML = pan;
+        document.getElementById('md').innerHTML = "The date today is " + new Date();
+    </script>
+
+</body>
+</html>
