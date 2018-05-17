@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Person</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <p id="fn"></p>
+    <p id="cn"></p>
+    <p id="ln"></p>
+    <p id="mn"></p>
+    <script>
+    var person = {
+        firstname: "Sewa",
+        lastname: "Keith",
+        age:        24,
+        fullname: function(){ return this.firstname + " " + this.lastname;},
+        changename: function(newfn, newln){
+                                        this.firstname = newfn;
+                                        this.lastname = newln; 
+                                        return this.firstname + " " + this.lastname;
+                                    }
+     };
+
+//     console.log(person.age);
+//     console.log(fullname());
+     document.getElementById('fn').innerHTML = person.age;
+     document.getElementById('cn').innerHTML = "Initial full name is " + person.fullname();
+     document.getElementById('ln').innerHTML = "Changing full name eto " + person.changename("David", "Mugabe");
+     document.getElementById('mn').innerHTML = "New full name is " + person.fullname();
+    </script>
+</body>
+</html>

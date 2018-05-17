@@ -38,6 +38,8 @@
                                     <input type="text" id="sh" name="sleephr" value="">
                                     <br>
                                     <p id="hw"></p>
+                                    <p id="mw"></p>
+                                    <p id="yw"></p>
                                     <input type="submit" id="cal" name="submit" value="Calculate" onclick="hwaste()">
                             </div>
                         </div>
@@ -49,8 +51,14 @@
         function hwaste() {
             var yage = document.getElementById('age').value;
             var ysh = document.getElementById('sh').value;
-            sw = yage * ysh * 365;
+            var dia = 365/24; // days in a year
+            var mia = 12; // months in a year
+            var sw = yage * ysh * dia;
+            var smw = yage * ysh * dia;
+            var myw = smw / 12;
             document.getElementById('hw').innerHTML = "You have wasted " + sw + " hours of your life!";
+//            document.getElementById('mw').innerHTML = "You have wasted " + smw + " months of your life!";
+//            document.getElementById('yw').innerHTML = "You have wasted " + myw + " years of your life!";
         }
         
     </script>

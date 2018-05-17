@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Person</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <p id="stp"></p>
+    
+    <script>
+        
+class Person {
+                constructor(fn, ln,ag)
+                {
+                    this.firstname = fn;
+                    this.lastname = ln;
+                    this.age = ag;
+                }
+
+                getFullname()
+                {
+                    return ("Yo full names are: " + this.firstname + " " + this.lastname);
+                }
+
+                getage()
+                {
+                    return (" and you are " + this.age + " old.");
+                }
+             }
+
+            var hj = new Person ("Sewa", "Keith", 25);
+            document.getElementById('stp').innerHTML = hj.getFullname() +hj.getage();
+    </script>
+
+</body>
+</html>

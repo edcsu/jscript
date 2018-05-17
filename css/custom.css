@@ -12,3 +12,15 @@
         font-family: cursive;
         color: red;
     }
+
+    #mw {
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        color: blueviolet;
+    }
+
+    #yw {
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        color: gold;
+    }

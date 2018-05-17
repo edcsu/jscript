@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Objects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <p id="jm"></p>
+
+    <script>
+        var person = {
+                        firstName:"John",
+                        lastName:"Doe",
+                        age:50,
+                        eyeColour:"blue",
+                        fullname:function() {return this.firstName + " " + this.lastName;},
+                     };
+        document.getElementById('jm').innerHTML = person.fullname() + " is " + person.age + " years old";
+    </script>
+
+</body>
+</html>
